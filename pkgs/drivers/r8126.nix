@@ -8,13 +8,13 @@
 
 stdenv.mkDerivation rec {
   pname = "r8126";
-  version = "10.015.00-1";
+  version = "10.016.00-1";
 
   src = fetchFromGitHub {
     owner = "awesometic";
     repo = "realtek-r8126-dkms";
     rev = version;
-    sha256 = "sha256-tCB53d5hkXiYjja1W7o9p94S87rGa9nXh8yXvreQBn4=";
+    sha256 = "sha256-x2WTcvTwsv1A3euYAik58a7RoB21TQqFQkriJ0B15g4=";
   };
 
   hardeningDisable = [ "pic" ];
